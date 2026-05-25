@@ -1,5 +1,5 @@
 version: 1
-generated_at: 2026-05-25T13:03:52Z
+generated_at: 2026-05-25T15:31:45Z
 internal: []
 trusted:
   - action: actions/checkout
@@ -23,40 +23,40 @@ trusted:
 external:
   - action: amannn/action-semantic-pull-request
     refs:
-      - v3.4.6
+      - 7bfb19c48fc334d3dacb072cf982e81535041209
     occurrences:
-      v3.4.6:
+      7bfb19c48fc334d3dacb072cf982e81535041209:
         .github/workflows/pr-title.yml:
           - jobs.main.steps.[0].uses
   - action: clowdhaus/terraform-composite-actions/directories
     refs:
-      - v1.3.0
+      - eb963bdb7f8b1c64e29b6f4b08c7e5eab1be4bd2
     occurrences:
-      v1.3.0:
+      eb963bdb7f8b1c64e29b6f4b08c7e5eab1be4bd2:
         .github/workflows/pre-commit.yml:
           - jobs.collectInputs.steps.[1].uses
   - action: clowdhaus/terraform-composite-actions/pre-commit
     refs:
-      - v1.3.0
+      - eb963bdb7f8b1c64e29b6f4b08c7e5eab1be4bd2
     occurrences:
-      v1.3.0:
+      eb963bdb7f8b1c64e29b6f4b08c7e5eab1be4bd2:
         .github/workflows/pre-commit.yml:
           - jobs.preCommitMinVersions.steps.[2].uses
           - jobs.preCommitMinVersions.steps.[3].uses
           - jobs.preCommitMaxVersion.steps.[2].uses
   - action: clowdhaus/terraform-min-max
     refs:
-      - v1.0.3
+      - 7009a64f997e57294f56f7c13b584e61574e7be9
     occurrences:
-      v1.0.3:
+      7009a64f997e57294f56f7c13b584e61574e7be9:
         .github/workflows/pre-commit.yml:
           - jobs.preCommitMinVersions.steps.[1].uses
           - jobs.preCommitMaxVersion.steps.[1].uses
   - action: cycjimmy/semantic-release-action
     refs:
-      - v2
+      - 5982a02995853159735cb838992248c4f0f16166
     occurrences:
-      v2:
+      5982a02995853159735cb838992248c4f0f16166:
         .github/workflows/release.yml:
           - jobs.release.steps.[1].uses
 local: []
