@@ -14,7 +14,7 @@ jobs:
       - runner=2cpu-linux-x64
       - "run-id=${{ github.run_id }}"
     steps:
-      - uses: actions/stale@v4
+      - uses: actions/stale@a20b814fb01b71def3bd6f56e7494d667ddf28da # v4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           # Staling issues and PR's

@@ -1,5 +1,5 @@
 version: 1
-generated_at: 2026-05-25T15:31:45Z
+generated_at: 2026-06-11T15:41:05Z
 internal: []
 trusted:
   - action: actions/checkout
@@ -15,9 +15,9 @@ trusted:
           - jobs.release.steps.[0].uses
   - action: actions/stale
     refs:
-      - v4
+      - a20b814fb01b71def3bd6f56e7494d667ddf28da
     occurrences:
-      v4:
+      a20b814fb01b71def3bd6f56e7494d667ddf28da:
         .github/workflows/stale-actions.yaml:
           - jobs.stale.steps.[0].uses
 external:
