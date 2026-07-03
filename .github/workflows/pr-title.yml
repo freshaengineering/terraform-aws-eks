@@ -21,6 +21,12 @@ jobs:
     steps:
       # Please look up the latest version from
       # https://github.com/amannn/action-semantic-pull-request/releases
+      - name: Harden the runner
+        uses: step-security/harden-runner@9af89fc71515a100421586dfdb3dc9c984fbf411 # v2
+        with:
+          use-policy-store: true
+          api-key: ${{ secrets.GH_FRESHAENGINEERING_STEP_SECURITY_API_KEY }}
+
       - uses: amannn/action-semantic-pull-request@7bfb19c48fc334d3dacb072cf982e81535041209 # v3.4.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
